@@ -11,7 +11,7 @@ export default function AnimatedStyle() {
     const style = useAnimatedStyle(() => {
         return {
             width: withTiming(width.value, { duration: 1000 }),
-            height: withTiming(height.value, { duration: 5000 }),
+            height: withTiming(height.value, { duration: 1000 }),
         }
     })
 

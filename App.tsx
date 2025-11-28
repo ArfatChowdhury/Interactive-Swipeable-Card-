@@ -1,13 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import AnimatedStyle from './animations/AnimatedStyle';
+import GestureStyle from './animations/GestureStyle';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <AnimatedStyle />
-      <StatusBar style="auto" />
-    </View>
+    <GestureHandlerRootView>
+
+      <View style={styles.container}>
+        {/* <AnimatedStyle /> */}
+        <GestureStyle />
+        <StatusBar style="auto" />
+      </View>
+    </GestureHandlerRootView>
   );
 }
 
